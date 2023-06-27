@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.generate input[type="submit"] {
+  padding: 10px 30px 10px 20px;
+  border-radius: 10px;
+  background-color: #d5214a;
+  border: 2px solid #00000080;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  transition: 0.25s;
+}
+.generate input[type="submit"]:hover {
+  border: 2px solid #00000060;
+  background-color: #e92553;
+  transition: 0.25s;
+}
+
+.generate input[type="submit"]:active {
+  background-color: black;
+  transition: 0.1s;
+}
+
+.generate .icon {
+  color: white;
+  position: relative;
+  left: -25px;
+  font-size: 15px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 10vh;
+  text-align: center;
+  width: 80%;
+}
+
+.display h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 50px;
+  margin: none;
+}
+.display img {
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+}
+.loading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading .text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading .text .logo{
+  color: white;
+  font-size: 30px;
+}
+
+.loading h1{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 1px;
+}
+
+.loadingImg{
+  display: flex;
+  position: relative;
+  left: 5%;
+  width: 40%;
+  margin: auto;
+}
