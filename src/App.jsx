@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Legends from './Components/legends';
+import Legends from './Components/Legends';
 import Navbar from './Components/Navbar';
 import Starter from './Components/Starter';
 import Footer from './Components/Footer';
@@ -17,9 +17,9 @@ function App() {
     <div className="app">
       {isLogged ? <div className='random'>
 
-        <Navbar setWeaponPath={setWeaponPath} setWeapon={setWeapon} setCharacter={setCharacter}/>
+        <Navbar setWeaponPath={setWeaponPath} setWeapon={setWeapon} setCharacter={setCharacter} />
         <Legends character={character} weapon={weapon} weaponPath={weaponPath} />
-        <Footer/>
+        <Footer />
       </div> : <Starter setIsLogged={setIsLogged} />}
 
     </div>
