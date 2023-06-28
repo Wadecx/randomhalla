@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import '../assets/Legends.css'
-import Gif from '../../public/loading/loading.gif';
+import Gif from '../../public/loading/Loading.gif';
 import { BsFillDice6Fill } from "react-icons/bs";
 
 
@@ -198,13 +198,13 @@ const legends = (props) => {
             {props.character || props.weapon ? <div className="display">
                 {props.character ? <div className='character'>
 
-                <h1>{props.character}</h1>
-                <img src={imgLegend}></img>
+                    <h1>{props.character}</h1>
+                    <img src={imgLegend}></img>
 
                 </div> : props.weapon ? <div className='weapon'>
 
-                <h1>{props.weapon}</h1>
-                <img src={props.weaponPath}></img>
+                    <h1>{props.weapon}</h1>
+                    <img src={props.weaponPath}></img>
 
                 </div>
 
