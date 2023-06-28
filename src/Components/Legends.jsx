@@ -195,15 +195,34 @@ const legends = (props) => {
 
     return (
         <>
-            {props.character ? <div className="display">
+            {props.character || props.weapon ? <div className="display">
+                {props.character ? <div className='character'>
+
                 <h1>{props.character}</h1>
                 <img src={imgLegend}></img>
+
+                </div> : props.weapon ? <div className='weapon'>
+
+                <h1>{props.weapon}</h1>
+                <img src={props.weaponPath}></img>
+
+                </div>
+
+                    :
+
+                    <div className='loading'>
+                        <div className="text">
+                            <h1>WAITING FOR YOU TO ROLL THE DICE </h1>
+                            <BsFillDice6Fill className='logo' />
+                        </div>
+                        <img src={Gif} className="loadingImg" />
+                    </div>}
             </div>
                 :
                 <div className='loading'>
                     <div className="text">
                         <h1>WAITING FOR YOU TO ROLL THE DICE </h1>
-                        <BsFillDice6Fill className='logo'/>
+                        <BsFillDice6Fill className='logo' />
                     </div>
                     <img src={Gif} className="loadingImg" />
                 </div>}

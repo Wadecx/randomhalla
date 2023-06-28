@@ -2,16 +2,26 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Legends from './Components/legends';
 import Navbar from './Components/Navbar';
+import Starter from './Components/Starter';
+import Footer from './Components/Footer';
 
 function App() {
 
   const [character, setCharacter] = useState();
-  
+  const [weapon, setWeapon] = useState();
+  const [weaponPath, setWeaponPath] = useState();
+  const [isLogged, setIsLogged] = useState(false);
+
 
   return (
     <div className="app">
-      <Navbar setCharacter={setCharacter} character={character}/>
-      <Legends character={character}/>
+      {isLogged ? <div className='random'>
+
+        <Navbar setWeaponPath={setWeaponPath} setWeapon={setWeapon} setCharacter={setCharacter}/>
+        <Legends character={character} weapon={weapon} weaponPath={weaponPath} />
+        <Footer/>
+      </div> : <Starter setIsLogged={setIsLogged} />}
+
     </div>
   )
 }
