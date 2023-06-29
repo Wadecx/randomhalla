@@ -9,7 +9,6 @@ function App() {
 
   const [character, setCharacter] = useState();
   const [weapon, setWeapon] = useState();
-  const [weaponPath, setWeaponPath] = useState();
   const [isLogged, setIsLogged] = useState(false);
 
 
@@ -17,8 +16,8 @@ function App() {
     <div className="app">
       {isLogged ? <div className='random'>
 
-        <Navbar setWeaponPath={setWeaponPath} setWeapon={setWeapon} setCharacter={setCharacter} />
-        <Legends character={character} weapon={weapon} weaponPath={weaponPath} />
+        <Navbar  setWeapon={setWeapon} setCharacter={setCharacter} />
+        <Legends character={character} weapon={weapon}/>
         <Footer />
       </div> : <Starter setIsLogged={setIsLogged} />}
 

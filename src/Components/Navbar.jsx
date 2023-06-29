@@ -312,8 +312,7 @@ const Navbar = (props) => {
 
   const handleWeapon = () => {
     const randomElement = randomizer(Weapons);
-    props.setWeapon(randomElement.name);
-    props.setWeaponPath(randomElement.path);
+    props.setWeapon(randomElement);
     props.setCharacter();
     console.log(randomElement);
   }

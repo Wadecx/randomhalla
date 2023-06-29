@@ -23,8 +23,8 @@ const legends = (props) => {
 
                 </div> : props.weapon ? <div className='weapon'>
 
-                    <h1>{props.weapon}</h1>
-                    <img src={props.weaponPath}></img>
+                    <h1>{props.weapon.name}</h1>
+                    <img src={props.weapon.path}></img>
 
                 </div>
 
