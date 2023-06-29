@@ -9,65 +9,238 @@ import { IoIosRefreshCircle } from "react-icons/io";
 const Navbar = (props) => {
 
   const Characters = [
-    "Bodvar",
-    "Cassidy",
-    "Orion",
-    "Lord Vraxx",
-    "Gnash",
-    "Queen Nai",
-    "Hattori",
-    "Sir Roland",
-    "Scarlet",
-    "Thatch",
-    "Ada",
-    "Sentinel",
-    "Lucien",
-    "Teros",
-    "Brynn",
-    "Asuri",
-    "Barraza",
-    "Ember",
-    "Azoth",
-    "Koji",
-    "Ulgrim",
-    "Diana",
-    "Jhala",
-    "Kor",
-    "Wu Shang",
-    "Val",
-    "Ragnir",
-    "Cross",
-    "Mirage",
-    "Nix",
-    "Mordex",
-    "Yumiko",
-    "Artemis",
-    "Caspian",
-    "Sidra",
-    "Xull",
-    "Kaya",
-    "Isaiah",
-    "Jiro",
-    "Lin Fei",
-    "Zariel",
-    "Rayman",
-    "Dusk",
-    "Fait",
-    "Thor",
-    "Petra",
-    "Vector",
-    "Volkov",
-    "Onyx",
-    "Jaeyun",
-    "Mako",
-    "Magyar",
-    "Reno",
-    "Munin",
-    "Arcadia",
-    "Ezio",
-    "Tezca",
-    "Thea",
-    "Red Raptor",
+    {
+      name: "Ada",
+      path: "legendImg/ada.png"
+    },
+    {
+      name: "Arcadia",
+      path: "legendImg/arcadia.png"
+    },
+    {
+      name: "Artemis",
+      path: "legendImg/artemis.png"
+    },
+    {
+      name: "Asuri",
+      path: "legendImg/asuri.png"
+    },
+    {
+      name: "Azoth",
+      path: "legendImg/azoth.png"
+    },
+    {
+      name: "Barraza",
+      path: "legendImg/barraza.png"
+    },
+    {
+      name: "Bodvar",
+      path: "legendImg/bodvar.png"
+    },
+    {
+      name: "Brynn",
+      path: "legendImg/brynn.png"
+    },
+    {
+      name: "Caspian",
+      path: "legendImg/caspian.png"
+    },
+    {
+      name: "Cassidy",
+      path: "legendImg/cassidy.png"
+    },
+    {
+      name: "Cross",
+      path: "legendImg/cross.png"
+    },
+    {
+      name: "Diana",
+      path: "legendImg/diana.png"
+    },
+    {
+      name: "Dusk",
+      path: "legendImg/dusk.png"
+    },
+    {
+      name: "Ember",
+      path: "legendImg/ember.png"
+    },
+    {
+      name: "Ezio",
+      path: "legendImg/ezio.png"
+    },
+    {
+      name: "Fait",
+      path: "legendImg/fait.png"
+    },
+    {
+      name: "Gnash",
+      path: "legendImg/gnash.png"
+    },
+    {
+      name: "Hattori",
+      path: "legendImg/hattori.png"
+    },
+    {
+      name: "Isaiah",
+      path: "legendImg/isaiah.png"
+    },
+    {
+      name: "Jaeyun",
+      path: "legendImg/jaeyun.png"
+    },
+    {
+      name: "Jhala",
+      path: "legendImg/jhala.png"
+    },
+    {
+      name: "Jiro",
+      path: "legendImg/jiro.png"
+    },
+    {
+      name: "Kaya",
+      path: "legendImg/kaya.png"
+    },
+    {
+      name: "Koji",
+      path: "legendImg/koji.png"
+    },
+    {
+      name: "Kor",
+      path: "legendImg/kor.png"
+    },
+    {
+      name: "Lin Fei",
+      path: "legendImg/linfei.png"
+    },
+    {
+      name: "Lord Vraxx",
+      path: "legendImg/lordvraxx.png"
+    },
+    {
+      name: "Lucien",
+      path: "legendImg/lucien.png"
+    },
+    {
+      name: "Magyar",
+      path: "legendImg/magyar.png"
+    },
+    {
+      name: "Mako",
+      path: "legendImg/mako.png"
+    },
+    {
+      name: "Mirage",
+      path: "legendImg/mirage.png"
+    },
+    {
+      name: "Mordex",
+      path: "legendImg/mordex.png"
+    },
+    {
+      name: "Munin",
+      path: "legendImg/munin.png"
+    },
+    {
+      name: "Nix",
+      path: "legendImg/nix.png"
+    },
+    {
+      name: "Onyx",
+      path: "legendImg/onyx.png"
+    },
+    {
+      name: "Orion",
+      path: "legendImg/orion.png"
+    },
+    {
+      name: "Petra",
+      path: "legendImg/petra.png"
+    },
+    {
+      name: "Queen Nai",
+      path: "legendImg/queennai.png"
+    },
+    {
+      name: "Ragnir",
+      path: "legendImg/ragnir.png"
+    },
+    {
+      name: "Rayman",
+      path: "legendImg/rayman.png"
+    },
+    {
+      name: "Red Raptor",
+      path: "legendImg/redraptor.png"
+    },
+    {
+      name: "Reno",
+      path: "legendImg/reno.png"
+    },
+    {
+      name: "Scarlet",
+      path: "legendImg/scarlet.png"
+    },
+    {
+      name: "Sentinel",
+      path: "legendImg/sentinel.png"
+    },
+    {
+      name: "Sidra",
+      path: "legendImg/sidra.png"
+    },
+    {
+      name: "Sir Roland",
+      path: "legendImg/sirroland.png"
+    },
+    {
+      name: "Teros",
+      path: "legendImg/teros.png"
+    },
+    {
+      name: "Tezca",
+      path: "legendImg/tezca.png"
+    },
+    {
+      name: "Thatch",
+      path: "legendImg/thatch.png"
+    },
+    {
+      name: "Thea",
+      path: "legendImg/thea.png"
+    },
+    {
+      name: "Thor",
+      path: "legendImg/thor.png"
+    },
+    {
+      name: "Ulgrim",
+      path: "legendImg/ulgrim.png"
+    },
+    {
+      name: "Val",
+      path: "legendImg/val.png"
+    },
+    {
+      name: "Vector",
+      path: "legendImg/vector.png"
+    },
+    {
+      name: "Wu Shang",
+      path: "legendImg/wushang.png"
+    },
+    {
+      name: "Xull",
+      path: "legendImg/xull.png"
+    },
+    {
+      name: "Yumiko",
+      path: "legendImg/yumiko.png"
+    },
+    {
+      name: "Zariel",
+      path: "legendImg/zariel.png"
+    }
   ];
 
   const Weapons = [
